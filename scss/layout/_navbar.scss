@@ -1,0 +1,45 @@
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6 {
+    .navbar {
+        padding: 2rem 0;
+
+        .my-container {
+            @include my-container(0 10rem);
+
+            .navbar-brand {
+                .navbar-logo {
+                    width: 15rem;
+                }
+            }
+
+            button:focus {
+                outline: #ffffff;
+                background-color: #cccccc;
+            }
+
+            .navbar-toggler {
+                background-color: #ffffff;
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    width: 100%;
+                    justify-content: flex-end;
+                    display: flex;
+
+                    .nav-item {
+                        .nav-link {
+                            color: #ffffff;
+                            font-size: 1.5rem;
+                            padding: 0 0 0 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

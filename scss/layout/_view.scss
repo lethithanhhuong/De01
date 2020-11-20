@@ -1,0 +1,51 @@
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6 {
+    .view {
+        .my-container {
+            @include my-container(0 10rem);
+
+            .my-row {
+                .my-col {
+                    .content {
+                        padding: 10rem 0 5rem 0;
+                        text-align: center;
+                        margin: auto;
+                    
+                        &__title {
+                            font-weight: bold;
+                        }
+                    
+                        &__desc {
+                            font-size: 1.5rem;
+                            font-style: italic;
+                        }
+                    }
+                    .card {
+                        border: none;
+                        &-body {
+                            padding-left: 0;
+                            padding-right: 0;
+
+                            .card-title {
+                                font-weight: bold;
+                                text-align: center;
+                            }
+
+                            .card-text {
+                                font-size: 1.5rem;
+                                text-align: center;
+                            }
+                        }
+
+                        @include for-size(767) {
+                            margin-bottom: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

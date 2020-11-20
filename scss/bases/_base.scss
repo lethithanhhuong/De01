@@ -1,0 +1,33 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+@media all and (max-width: 1365px){
+  html{
+    font-size: 56.25%;
+  }
+}
+@media all and (max-width: 1199px){
+  html{
+    font-size: 50%;
+  }
+}
+@media all and (max-width: 991px){
+  html{
+    font-size: 37.5%;
+  }
+}
+  body {
+    width: calc(100vw - (100vw - 100%));
+    font: {
+      size: 22px;
+      family: "Roboto-Regular";
+    }
+  }

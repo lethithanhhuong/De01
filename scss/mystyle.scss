@@ -1,0 +1,224 @@
+@import "./abstracts/variables";
+@import "./bases/base";
+@import "./abstracts/mixins";
+@import "./bases/font";
+@import "./layout/navbar";
+@import "./layout/view";
+@import "./components/buttons";
+
+.section-1 {
+    .view {
+        background: #ccc url("../images/assets/img/header-bg.jpg") no-repeat center;
+        height: $primary-height;
+        background-size: cover;
+
+        .my-container {
+            @include my-container(0 10rem);
+
+            .my-row {
+                .my-col {
+                    display: flex;
+                    justify-content: center;
+                    height: 95vh;
+                    align-items: center;
+                    text-align: center;
+
+                    .content {
+                        color: #ffffff;
+                        padding: 0;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        .content__title {
+                            font-size: 3.3rem;
+                            font-style: italic;
+                            font-weight: normal;
+
+                            @include for-size(1199) {
+                                font-size: 3.2rem;
+                            }
+
+                            @include for-size(375) {
+                                font-size: 3rem;
+                            }
+
+                            @include for-size(320) {
+                                font-size: 2rem;
+                            }
+                        }
+
+                        .content__desc {
+                            font-size: 7.3rem;
+                            font-style: normal;
+                            font-weight: normal;
+
+                            @include for-size(1199) {
+                                font-size: 7rem;
+                            }
+
+                            @include for-size(575) {
+                                font-size: 4rem;
+                            }
+
+                            @include for-size(375) {
+                                font-size: 3.5rem;
+                            }
+
+                            @include for-size(320) {
+                                font-size: 3rem;
+                            }
+                        }
+
+                        .btn-primary {
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            padding: 1rem 4rem;
+                            position: relative;
+                            top: 4rem;
+
+                            @include for-size(1199) {
+                                top: 3rem
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-2 {
+    .view {
+        height: $primary-height;
+
+        .my-container {
+            @include my-container(0 10rem);
+
+            .my-row {
+                .my-col {
+                    .card {
+                        &-icon {
+                            text-align: center;
+                            color: #fff;
+                            background-color: $primary-color;
+                            width: 5rem;
+                            padding: 1rem;
+                            margin: auto;
+                            border-radius: 100%;
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.section-4{
+    .view{
+        .my-container{
+            .my-row{
+                .my-col{
+                    .content-introduct{
+                        text-align: right;
+                        padding-left: 10rem;
+                        @include for-size(767){
+                            text-align: center;
+                            padding: 0;
+                        }
+                        &__year{
+                            font-weight: bold;
+                        }
+                        &__title{
+                            font-weight: bold;
+                        }
+                        &__text{
+                            font-size: 1.5rem;
+                            text-align: right;
+                            @include for-size(767){
+                                text-align: center;
+                            }
+                        }
+                    }
+                    img{
+                        border-radius: 100%;
+                        border: 0.2rem #ccc inset;
+                        @include for-size(767){
+                            width: 50%;
+                            display: block;
+                            margin: auto;
+                        }
+                    }
+                    .line{
+                        width: 0.1rem;
+                        height: 20rem;
+                        background-color: #ccc;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+.section-5{
+    .view{
+        .my-row{
+            display: flex;
+            justify-content: space-around;
+            .my-col{
+                .card{
+                    background-color: #ccc;
+                    img{
+                        width: 15rem;
+                        height: 15rem;
+                        border-radius: 50%;
+                        border: 0.3rem solid #ccc;
+                        margin: auto;
+                    }
+                    .card-body{
+                        .card-icon{
+                            &__item{
+                                padding: 0 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.section-6{
+    .view{
+        background: #ccc url("../images/assets/img/map-image.png") no-repeat center;
+        background-color: #000000d9;
+        background-size: cover;
+        .my-container{
+            .my-row{
+                .my-col{
+                    padding: 0 1rem;
+                    input::placeholder{
+                        font-size: 1.5rem;
+                    }
+                    .input-item{
+                        width: 100%;
+                        margin-bottom: 2rem;
+                        padding: 0 1rem;
+                        height: 5rem;
+                    }
+                    textarea::placeholder{
+                        font-size: 1.5rem;
+                    }
+                    .textarea-item{
+                        width: 100%;
+                        height: 19rem;
+                        padding: 1rem;
+                    }
+                    .btn-item{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
